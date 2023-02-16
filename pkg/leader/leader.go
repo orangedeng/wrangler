@@ -61,7 +61,7 @@ func run(ctx context.Context, namespace, name string, client kubernetes.Interfac
 				logrus.Fatalf("leaderelection lost for %s", name)
 			},
 		},
-		ReleaseOnCancel: true,
+		ReleaseOnCancel: false,
 	})
 	panic("unreachable")
 }
