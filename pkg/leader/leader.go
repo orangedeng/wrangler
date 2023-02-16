@@ -78,7 +78,7 @@ func run(ctx context.Context, namespace, name string, client kubernetes.Interfac
 				}
 			},
 		},
-		ReleaseOnCancel: true,
+		ReleaseOnCancel: false,
 	})
 	panic("unreachable")
 }
